@@ -1,4 +1,13 @@
-In this program, Computer pickups a random item among stone, paper and scissor.
-Now, user is asked to provide his/her choice among the three. 
-At the end, result of the game is displayed (win/loss/draw) along with the item that the computer and user chose.
 Its pretty simple, juzt you and the console have a communication.
+
+Users have 3 choices: The Rock, paper, or scissors.
+
+Users can select a new move every round.
+
+Computer can automatically select a new move every round.
+
+The game will select a random image associated with the player’s choice of move and display it.
+
+Keeps score.
+
+Displays a winner for every round.
