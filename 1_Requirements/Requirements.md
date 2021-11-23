@@ -18,7 +18,7 @@ Here, the user will be asked to make choice and according to the choice of user 
 
 In 1927 La Vie au patronage, a children's magazine in France, described it in detail, referring to it as a "jeu japonais" ("Japanese game"). Its French name, "Chi-fou-mi", is based on the Old Japanese words for "one, two, three" ("hi, fu, mi").
 
-A 1932 New York Times article on the Tokyo rush hour describes the rules of the game for the benefit of American readers, suggesting it was not at that time widely known in the U.S.Likewise, the trick-taking card game “Jan-Ken-Po”, first published in 1934, describes the rules of the hand-game without mentioning any American game along the lines of “rock paper scissors”. The 1933 edition of the Compton's Pictured Encyclopedia described it as a common method of settling disputes between children in its article on Japan; the name was given as "John Kem Po" and the article pointedly asserted, "This is such a good way of deciding an argument that American boys and girls might like to practice it too
+A 1932 New York Times article on the Tokyo rush hour describes the rules of the game for the benefit of American readers, suggesting it was not at that time widely known in the U.S.Likewise, the trick-taking card game “Jan-Ken-Po”, first published in 1934, describes the rules of the hand-game without mentioning any American game along the lines of “rock paper scissors”. The 1933 edition of the Compton's Pictured Encyclopedia described it as a common method of settling disputes between children in its article on Japan; the name was given as "John Kem Po" and the article pointedly asserted, "This is such a good way of deciding an argument that American boys and girls might like to practice it too.
 
 ## Swot Analysis:
 
@@ -33,7 +33,7 @@ Threat - No software is currently available for updation.
 
 ## Outcome - There are four possible outcomes:
 
-1) tie 2) rock crushes scissors 3) paper covers rock 4) scissors cut paper
+1) Tie 2) Rock crushes scissors 3) Paper covers rock 4) Scissors cut paper
 
 ## Requirements:
 
