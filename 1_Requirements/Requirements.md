@@ -63,7 +63,7 @@ When : The user can access it anytime , anywhere.
 
 Who: People who look for relaxation  
 
-Why: it is a fair choosing method between two people
+Why: It is a fair choosing method between two people
 
 ## *1H*
 
