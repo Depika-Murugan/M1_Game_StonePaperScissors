@@ -89,3 +89,9 @@ How : Player decides to play rock will beat another player with scissors
 | T2 | The scissors cuts the paper|  SUCCESS| SUCCESS| PASS
 | T3 | The Paper cover the rock|  SUCCESS| SUCCESS| PASS
 | T4 | If the formation is same from both the side, it is considered a draw.|  SUCCESS| SUCCESS| PASS
+
+## Results
+
+![output1](https://user-images.githubusercontent.com/65906735/143296047-f630db42-eabf-4849-942d-4902bc38fbce.jpeg)
+
+![output2](https://user-images.githubusercontent.com/65906735/143296062-40d56c9e-b5fc-4ef0-80da-43bdb67742dc.jpeg)
