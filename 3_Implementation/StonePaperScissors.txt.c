@@ -1,119 +1,202 @@
-#include <stdio.h>
-#include <string.h>
-#include <math.h>
-#include <time.h>
+#include<stdio.h>
+#include<math.h>
+#include<stdlib.h>
 
-void printTitle(char a[]);
-void stringToCaps(char a[]);
+//Establish Functions
+int printOptions();
+void playsGame();
+int printOptions2();
+int deePlays(int user_selection2);
+void scoreboard(int *wins, int *loses);
 
-int main(){
-    int userHand, computerHand;
-    char userHandString[10], computerHandString[10];
-    
-    int result;
+int main()
+{
+// Establish Variable
+    int user_selection;
+// Dee is a kid that wants to play rock, paper, scissors!
+    printf("\nHi my name is Dee would you like to play rock, paper, scissors with me?\n");
 
-    int keepAsking;
-    char keepPlaying = 'Y';
-
-    /*Start randomizer*/
-    srand(time(NULL));
-
-    while(keepPlaying == 'Y' || keepPlaying == 'y'){
-        /*Generate computer's hand*/
-        computerHand = rand() % 3;
-
-        switch(computerHand){
-            case 0:
-                strcpy(computerHandString, "ROCK");
-                break;
-            case 1:
-                strcpy(computerHandString, "PAPER");
-                break;
-            case 2:
-                strcpy(computerHandString, "SCISSORS");
-                break;
-            default:
-                break;
+    do
+    {
+        user_selection = printOptions();
+        switch(user_selection)
+        {
+        case 0:
+        {
+//Dee says "Ok! Have a nice day then!" if user justs say no to him.
+            printf("\n     Ok! Have a nice day then!\n");
+            break;
         }
-
-        /*Game*/
-        printTitle("ROCK, PAPER, SCISSORS BY ZABE");      
-
-        do{
-            printf("\nRock, paper or scissors?: ");
-
-            scanf("%s", userHandString);
-            stringToCaps(userHandString);
-
-            keepAsking = 0;
-
-            if(strcmp(userHandString, "ROCK") == 0)
-                userHand = 0;
-            else if(strcmp(userHandString, "PAPER") == 0)
-                userHand = 1;
-            else if(strcmp(userHandString, "SCISSORS") == 0)
-                userHand = 2;
-            else
-                keepAsking = 1;
-        }while(keepAsking == 1);
-
-        printf("\n\nYour hand: %s", userHandString);
-        printf("\nComputer's hand: %s\n\n", computerHandString);
-
-        result = userHand - computerHand;
-        if(result < 0)
-            result += 3;
-
-        switch(result){
-            case 0:
-                printf("It's a draw, gg\n\n");
-                break;
-            case 1:
-                printf("YOU WON YAY!\n\n");
-                break;
-            case 2:
-                printf("Oh, you lost. GG EZ NOOB\n\n");
-                break;
-            default:
-                break;
+        case 1:
+        {
+// Dee asks "What will you first choose rock, paper, or scissors?" if you say yes to him.
+            printf("\nOk! What will you first choose rock, paper, or scissors?\n\n");
+            playsGame();
+            exit(1);
         }
-               
-        do{
-            printf("Do you want to keep playing? [Y/N]: ");
-            fflush(stdin);
-            scanf("%c",&keepPlaying);
-        }while(keepPlaying != 'y' && keepPlaying != 'Y'&& keepPlaying != 'n' && keepPlaying != 'N');
-        system("@cls||clear");
+        case 2:
+        {
+            printf("\n\tWhen does a robot need training?\n\tWhenever it get rusty.\n\tHAHAHAHAHAHAHAHAHAHA\n\n");
+            break;
+        }
+        case 3:
+        {
+            printf("\n Billy: What did the man say to his dead robot?\n Bob: What?\n Billy: Rust in peace.\n HAHAHAHAHAHA\n\n");
+            break;
+            ;
+        }
+        case 4:
+        {
+            printf("OK fine! I will ask someone else then!... jerk\n");
+            exit(1);
+        }
+        default:
+        {
+            printf(" Invalid response entered: %d\n", user_selection);
+        }
+        }
     }
-
-    printTitle("Thanks for playing! UwU");
-    clock_t start_time = clock(); 
-    while (clock() < start_time + 1600);
-
+    while (user_selection != 0);
     return 0;
 }
-
-void printTitle(char a[]){
-    int j = 0;
-    printf("%c%c",176,177);
-    for(int i = 0; i <= strlen(a)+7; i++)
-        printf("%c",178);
-    printf("%c%c\n",177,176);
-    printf("%c%c%c%c%c ",176,177,178,177,176);
-    while(a[j]!='\0'){
-        printf("%c",a[j]);
-        j++;
+// Preconditions:   None
+// Postconditions:  Returns user menu of options
+// Actions:         Prints question and reads in and returns user input
+int printOptions()
+{
+    int user_selection;
+// Print the Menu of options
+    printf("    Press 0 to say no\n");
+    printf("    Press 1 to say yes\n");
+    printf("    Press 2 to ask for a joke instead\n");
+    printf("    Press 3 to ask for another joke\n");
+    printf("    Press 4 to say NOOOOOOOO LEAVE ME ALONE\n\t\t");
+    scanf("%d", &user_selection);
+    return (user_selection);
+}
+// Preconditions:   None
+// Postconditions:  None
+// Actions:         Lets user play rock, paper, scissor with jack through a series of options
+void playsGame()
+{
+    int user_selection2, dee_choose, wins = 0, loses = 0;
+    do
+    {
+        user_selection2 = printOptions2();
+        switch(user_selection2)
+        {
+        case 0:
+        {
+            printf(" I'm sorry you must leave...Have a nice day!\n");
+            break;
+        }
+        case 1:
+        {
+            dee_choose = deePlays(user_selection2);
+            if(dee_choose == 1)
+            {
+                printf("\n My rock beats your scissors\n\n");
+                loses++;
+                scoreboard(wins, loses);
+                break;
+            }
+            if(dee_choose == 0)
+            {
+                printf("\n I got scissors too I guess it's a tie\n\n");
+                break;
+            }
+            if(dee_choose == 2)
+            {
+                printf("\n Your scissors beat my rock!!! I will beat you next time! You will see >:( \n\n");
+                wins++;
+                scoreboard(wins, loses);
+                break;
+            }
+        }
+        case 2:
+        {
+            dee_choose = deePlays(user_selection2);
+            if(dee_choose == 1)
+            {
+                printf("\n My scissors beats your paper\n\n");
+                loses++;
+                scoreboard(wins, loses);
+                break;
+            }
+            if(dee_choose == 0)
+            {
+                printf("\n I got paper too ... I guess it's a tie\n\n");
+                break;
+            }
+            if(dee_choose == 2)
+            {
+                printf("\n Your paper beat my rock!!! I'm so mad right now!! >:( \n\n");
+                wins++;
+                scoreboard(wins, loses);
+                break;
+            }
+        }
+        case 3:
+        {
+            dee_choose = deePlays(user_selection2);
+            if(dee_choose == 1)
+            {
+                printf("\n My paper beats your rock\n\n");
+                loses++;
+                scoreboard(wins, loses);
+                break;
+            }
+            if(dee_choose == 0)
+            {
+                printf("\n I got rock too I guess it's a tie\n\n");
+                break;
+            }
+            if(dee_choose == 2)
+            {
+                printf("\n Your rock beat my scissors!!! DARN it :( \n\n");
+                wins++;
+                scoreboard(wins, loses);
+                break;
+            }
+        }
+        default:
+        {
+            printf(" Invalid response entered: %d\n", user_selection2);
+        }
+        }
     }
-    printf(" %c%c%c%c%c\n",176,177,178,177,176);
-    printf("%c%c",176,177);
-    for(int i = 0; i <= strlen(a)+7; i++)
-        printf("%c",178);
-    printf("%c%c\n",177,176);
-
+    while (user_selection2 != 0);
 }
 
-void stringToCaps(char a[]){
-    for(int i = 0; i < strlen(a); i++)
-        if(a[i] > 96 && a[i] < 123)
-            a[i] -= 32;
+// Preconditions:   None
+// Postconditions:  Returns user menu of answers
+// Actions:         Prints menu and reads in and returns user input
+int printOptions2()
+{
+    int user_selection2;
+// Print the Menu
+    printf("    Press 0 to say I got to go kid\n");
+    printf("    Press 1 to say Scissors\n");
+    printf("    Press 2 to say Paper\n");
+    printf("    Press 3 to say Rock\n\t\t");
+    scanf("%d", &user_selection2);
+    return (user_selection2);
+}
+// Preconditions:   Gets the user selection
+// Postconditions:  Returns a random number
+// Actions:         Makes up a random number
+int deePlays(user_selection2)
+{
+    int dee_choose;
+    dee_choose = rand()%3;
+    return dee_choose;
+}
+// Preconditions:   Gets Wins and Loses every time the user wins or loses a point
+// Postconditions:  Returns user a scoreboard
+// Actions:         prints a mini scoreboard every time the user wins or loses a point
+void scoreboard(int *wins, int *loses)
+{
+    printf("The score board is now:\n");
+    printf(" Me(Dee) - You\n");
+    printf(" %d         %d\n\n",loses, wins);
 }
