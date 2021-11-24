@@ -9,3 +9,5 @@ https://app.codiga.io/public/project/29935/M1_Game_StonePaperScissors/dashboard
 
 ## CODE GRADE
 ![](https://api.codiga.io/project/29935/status/svg)
+
+(https://app.codacy.com/gh/Depika-Murugan/M1_Game_StonePaperScissors/dashboard?branch=main)
