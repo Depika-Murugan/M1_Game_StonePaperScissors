@@ -90,6 +90,15 @@ How : Player decides to play rock will beat another player with scissors
 | T3 | The Paper cover the rock|  SUCCESS| SUCCESS| PASS
 | T4 | If the formation is same from both the side, it is considered a draw.|  SUCCESS| SUCCESS| PASS
 
+# The results as binary endorelations or homogeneous relations, relations formed between two elements in the same set, in this case the set of possible moves:
+
+The WIN relation contains: (Rock, Scissors), (Scissors, Paper) and (Paper, Rock)
+
+The DRAW relation contains: (Rock, Rock), (Scissors, Scissors) and (Rock, Rock)
+
+The LOSE relation contains: (Scissors, Rock), (Paper, Scissors) and (Rock, Paper)
+
+
 ## Results
 
 ![output1](https://user-images.githubusercontent.com/65906735/143296047-f630db42-eabf-4849-942d-4902bc38fbce.jpeg)
