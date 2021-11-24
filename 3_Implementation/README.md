@@ -1,13 +1,13 @@
-Its pretty simple, juzt you and the console have a communication.
+* Its pretty simple, juzt you and the console have a communication.
 
-Users have 3 choices: The Rock, paper, or scissors.
+* Users have 3 choices: The Rock, paper, or scissors.
 
-Users can select a new move every round.
+* Users can select a new move every round.
 
-Computer can automatically select a new move every round.
+* Computer can automatically select a new move every round.
 
-The game will select a random image associated with the player’s choice of move and display it.
+* The game will select a random image associated with the player’s choice of move and display it.
 
-Keeps score.
+* Keeps score.
 
-Displays a winner for every round.
+* Displays a winner for every round.
