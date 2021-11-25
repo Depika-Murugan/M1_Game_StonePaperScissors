@@ -10,9 +10,13 @@ Welcome !!!
 ## CODE GRADE
 ![](https://api.codiga.io/project/29935/status/svg)
 
-Codacy:
+## Codacy
 (https://app.codacy.com/gh/Depika-Murugan/M1_Game_StonePaperScissors/dashboard?branch=main)
 
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/4c5259762aab48c3bd3730e58a955d70)](https://www.codacy.com/gh/Depika-Murugan/M1_Game_StonePaperScissors/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Depika-Murugan/M1_Game_StonePaperScissors&amp;utm_campaign=Badge_Grade)
 
+## CPP check
 [![Code Quality - Static Code - Cppcheck](https://github.com/Depika-Murugan/M1_Game_StonePaperScissors/actions/workflows/cppcheck.yml/badge.svg)](https://github.com/Depika-Murugan/M1_Game_StonePaperScissors/actions/workflows/cppcheck.yml)
+
+## Git Inspector
+[![Contribution Check - Git Inspector](https://github.com/Depika-Murugan/M1_Game_StonePaperScissors/actions/workflows/gitinspector.yml/badge.svg)](https://github.com/Depika-Murugan/M1_Game_StonePaperScissors/actions/workflows/gitinspector.yml)
